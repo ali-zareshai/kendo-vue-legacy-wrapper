@@ -1,0 +1,32 @@
+{
+  "name": "kendo-vue-legacy-wrapper",
+  "version": "1.0.0",
+  "main": "dist/kendo-vue-legacy-wrapper.umd.js",
+  "module": "dist/kendo-vue-legacy-wrapper.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/kendo-vue-legacy-wrapper.es.js",
+      "require": "./dist/kendo-vue-legacy-wrapper.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "@progress/kendo-vue-grid": "latest",
+    "@progress/kendo-data-query": "latest",
+    "@progress/kendo-vue-excel-export": "latest",
+    "@progress/kendo-vue-buttons": "latest",
+    "@progress/kendo-vue-inputs": "latest",
+    "@progress/kendo-licensing": "latest"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "@vitejs/plugin-vue": "^5.0.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "files": ["dist"]
+}
